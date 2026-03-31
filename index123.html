@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Riya Rani">
+    <meta name="description" content="The official website for The Little Coffee Shop">
+    <title>The Little Coffee Shop</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:  sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: 
+                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            animation: zoomBg 20s infinite alternate;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0,0,0,0.6);
+            animation: fadeIn 2s ease;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffcc80;
+            text-transform: capitalize;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.2);
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #ffcc80;
+            color: #000;
+        }
+
+        figure img {
+            width: 300px;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+            animation: float 4s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        figcaption {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        article {
+            margin: 30px 0;
+        }
+
+        article h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ffcc80;
+        }
+
+        article p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        aside {
+            background: rgba(0,0,0,0.4);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: rgba(0,0,0,0.4);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        caption {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffcc80;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        th {
+            background: rgba(255, 204, 128, 0.2);
+        }
+
+        tfoot td {
+            font-weight: bold;
+        }
+
+        a {
+            color: #ffcc80;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to The Little Coffee Shop ☕</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#about">About LCS</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="hours.html">Store Hours</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <figure>
+                <img src="coffee.jpg" alt="Coffee">
+                <figcaption>Fresh & Delicious Coffee</figcaption>
+            </figure>
+        </header>
+
+        <main>
+            <article id="about">
+                <h2>About LCS</h2>
+                <p>
+                    The Little Coffee Shop was founded in <time datetime="2025">2025</time> 
+                    from a <strong>deep love for coffee</strong>.  
+                    Our goal is to make every cup special for our lovely town.
+                </p>
+
+                <aside>
+                    <h3>Indian Coffee History 🇮🇳</h3>
+                    <details>
+                        <summary>When did coffee first appear in India?</summary>
+                        <p>
+                            Coffee arrived in India around <time datetime="1705">1705</time> 
+                            when Baba Budan brought coffee beans from Yemen and planted them 
+                            in Chikmagalur, Karnataka.
+                        </p>
+                    </details>
+                </aside>
+            </article>
+
+            <article id="menu">
+                <h2>Our Menu</h2>
+
+                <table>
+                    <caption>Our Coffee</caption>
+                    <thead>
+                        <tr>
+                            <th>Coffee</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="3">Delicious</th>
+                            <td>1</td>
+                            <td>$1.50</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$2.50</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>$3.25</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">Tasty</th>
+                            <td>1</td>
+                            <td>$2.00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$3.25</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>$4.50</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">French Fries & Toast – $2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <p style="margin-top:20px;">
+                    <a href="#">Back to Top ↑</a>
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 The Little Coffee Shop. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

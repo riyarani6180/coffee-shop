@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Riya Rani">
+    <meta name="description" content="Store hours for The Little Coffee Shop">
+    <title>LCS Hours</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            animation: bgZoom 20s infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        @keyframes bgZoom {
+            0% {
+                background-size: 100%;
+            }
+            100% {
+                background-size: 115%;
+            }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(12px);
+            border-radius: 22px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 0 35px rgba(0,0,0,0.6);
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            color: #ffcc80;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.25);
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #ffcc80;
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        figure img {
+            width: 280px;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 12px 22px rgba(0,0,0,0.7);
+            animation: floatImg 4s infinite ease-in-out;
+        }
+
+        @keyframes floatImg {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        figcaption {
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        main {
+            margin-top: 25px;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        dl {
+            background: rgba(0,0,0,0.45);
+            padding: 22px;
+            border-radius: 16px;
+            width: 70%;
+            margin: 0 auto 20px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #ffcc80;
+            margin-top: 12px;
+        }
+
+        dd {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #ffcc80;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>The Little Coffee Shop ☕ Hours</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#about">About LCS</a></li>
+                    <li><a href="/#menu">Our Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <figure>
+                <img src="coffee tray.webp" alt="A tray of coffee">
+                <figcaption>A tray of freshly brewed coffee</figcaption>
+            </figure>
+        </header>
+
+        <main>
+            <p>We are open <strong>7 days a week</strong> to serve you!</p>
+
+            <dl>
+                <dt>Sunday – Thursday</dt>
+                <dd>11:00 AM – 9:00 PM</dd>
+
+                <dt>Friday – Saturday</dt>
+                <dd>11:00 AM – 10:00 PM</dd>
+            </dl>
+
+            <p>
+                <a href="#">Back to Top ↑</a>
+            </p>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 The Little Coffee Shop. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
